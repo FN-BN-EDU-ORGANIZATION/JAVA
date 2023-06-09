@@ -2,6 +2,6 @@ package Teacher;
 
 public class C00HelloWorld {
 	public static void main(String[] args) {
-		System.out.println("HELLO WORLDjj");
+		System.out.println("HELssLO WORLD java");
 	}
 }
