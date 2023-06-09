@@ -1,6 +1,6 @@
 package 전찬식;
 
-public class C01HELLOWORLD {
+public class C01helloworld {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
