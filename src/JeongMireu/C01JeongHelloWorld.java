@@ -1,6 +1,6 @@
 package JeongMireu;
 
-public class C00HelloWorld {
+public class C01JeongHelloWorld {
 
 	public static void main(String[] args) {
 		
