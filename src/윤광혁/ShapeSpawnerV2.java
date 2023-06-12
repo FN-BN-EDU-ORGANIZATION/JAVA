@@ -119,9 +119,11 @@ class makeShapeRectangleV1 extends Shapes implements makeShape {
 
 	@Override
 	public void makeShape() {
+		clearConsole();
 		lineSpawner();
 		RectangleV1();
 		lineSpawner();
+		ConsoleMenu();
 	}
 	
 }
@@ -129,9 +131,11 @@ class makeShapeRectangleV2 extends Shapes implements makeShape {
 
 	@Override
 	public void makeShape() {
+		clearConsole();
 		lineSpawner();
 		RectangleV2();
 		lineSpawner();
+		ConsoleMenu();
 	}
 	
 }
@@ -139,9 +143,11 @@ class makeShapeTriangle extends Shapes implements makeShape {
 
 	@Override
 	public void makeShape() {
+		clearConsole();
 		lineSpawner();
 		Triangle();
 		lineSpawner();
+		ConsoleMenu();
 	}
 	
 }
@@ -149,9 +155,11 @@ class makeShapeQuadrilateral extends Shapes implements makeShape {
 
 	@Override
 	public void makeShape() {
+		clearConsole();
 		lineSpawner();
 		Quadrilateral();
 		lineSpawner();
+		ConsoleMenu();
 	}
 	
 }
@@ -159,9 +167,11 @@ class makeShapeRhombus extends Shapes implements makeShape {
 
 	@Override
 	public void makeShape() {
+		clearConsole();
 		lineSpawner();
 		Rhombus();
 		lineSpawner();
+		ConsoleMenu();
 	}
 	
 }
@@ -186,42 +196,31 @@ class MainRun extends Shapes {
 			switch (mselecter) {
 			//직삼각형v1 형성
 			case "1": { 
-				clearConsole();
 				ShapeRectangleV1.makeShape();
-				ConsoleMenu();
 				break;
 			}
 			//직삼각형v2 형성
 			case "2": {
-				clearConsole();
 				ShapeRectangleV2.makeShape();
-				ConsoleMenu();
 				break;
 			}
 			//정삼각형 형성
 			case "3": {
-				clearConsole();
 				ShapeTriangle.makeShape();
-				ConsoleMenu();
 				break;
 			}
 			//평행사변형 형성
 			case "4": {
-				clearConsole();
 				ShapeQuadrilateral.makeShape();
-				ConsoleMenu();
 				break;
 			}
 			//마름모 형성
 			case "5": {
-				clearConsole();
 				ShapeRhombus.makeShape();
-				ConsoleMenu();
 				break;
 			}
 			//종료
 			case "6": {
-				
 				inmenu = false;
 				System.out.println("종료합니다.");
 				break;
