@@ -1,10 +1,9 @@
-package 전찬식;
+package 정우균;
 
-public class C01helloworld {
+public class C01Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("HELLO WORLD");
 
 	}
 
