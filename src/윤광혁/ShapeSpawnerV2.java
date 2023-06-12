@@ -176,6 +176,7 @@ class makeShapeRhombus extends Shapes implements makeShape {
 	
 }
 class MainRun extends Shapes {
+	//인터페이스 연결
 	//-------------------------------------------------------
 	makeShape ShapeRectangleV1 = new makeShapeRectangleV1();
 	makeShape ShapeRectangleV2 = new makeShapeRectangleV2();
