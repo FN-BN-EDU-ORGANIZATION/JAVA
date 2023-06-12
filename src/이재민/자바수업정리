@@ -306,4 +306,40 @@
  			- double	: Double
  		- 만든 이유	: 클래스화 하여 다양한 메서드를 제공하기 위함
  		- 제너릭 같이 클래스 타입을 요구할때 사용해야 한다
+ 		
+ 	- Date 클래스
+ 		- Calendar 클래스가 나오기 전까지 사용된 클래스
+ 		- 메서드
+ 			- getYear	: 년도를 출력
+ 			- getMonth	: 0 ~ 11까지 출력하므로 뒤에 +1을 더한다
+ 			- getDay	: 0 ~ 6 으로 출력되며 일 ~ 토 순서이다
+ 			- getDate	: 날짜를 출력
+ 			- getHours	: 시간을 출력
+ 			- getMinutes: 분을 출력
+ 			- getSeconds: 초를 출력
+ 		
+ 	- Calendar 클래스
+ 		- 날짜와 시간을 다루는 클래스
+ 		- Calendar 은 객체사 생성 불가하다
+ 		- 메서드
+ 			- getInstance	: 기본은 현재 시스템의 시간
+ 			- YEAR			: 년도를 출력
+ 			- MONTH	+1		: 0~11 까지 출력하므로 뒤에 + 1을 더한다
+ 			- DATE			: 날짜를 출력
+ 			- HOUR			: 시간
+ 			- MINUTE		: 분
+ 			- SECOND		: 초
+ 			- MILLISECOND	: 1000분의 1초
+ 			- DAY_OF_WEEK	: 1~7 로 출력되며 일 ~ 토 순서이다
  	
+ 	- Formatter 클래스
+ 		- SimpleDateFormat	: 날짜 형식을 변경해준다
+ 			- 객체를 생성후 사용할수있다.
+ 			- Calendar 객체를 생성후 Date 클래스로 형 변환을 하여 사용할수도 있다.
+ 				- 바로 SimpleDateFormat 을 생성 하면서 뒤에 ("원하는 형식").format(Date클래스로 형변환한 Cal 객체명)
+ 				  으로 바로 System.out.println을 사용할수 있다.
+ 				  - 예 : Calendar cal = Calendar.getInstance();
+ 				  		 Date date = cal.getTime();
+ 				  		 System.out.println(new SimpleDateFormat("yyyy-MM-dd").format(date);
+ 			- format 할때 월 분은 mm 으로 표시되어 월은 대문자 분은 소문자로 표시한다.	  		 
+ 				  		  
