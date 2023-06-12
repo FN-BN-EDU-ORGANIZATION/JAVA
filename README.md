@@ -6,3 +6,10 @@
 #### HongGilDong
 
 ### 3 master branch와 병합 요청시 Pull Request를 만들고 jungwoogyun의 코드리뷰 이후 Merging처리 합니다.
+
+
+
+### 4 내용
+#### 각챕터별 문제 은행용
+#### 토이 프로젝트 주제 정하고 코드 리뷰용도
+#### ..
