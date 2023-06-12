@@ -275,8 +275,35 @@
   		- HashCode			: 객체를 식별하는 하나의 정수값
   		- identityHashCode	: 실제 객체위치 을 확인하는 함수
   		- clone				: 객체를 복제하는데 사용되는 메서드
-  		- String 클래스는 기본적으로 equals를 오버라이딩하고 있다.
   
- 	
- 	1
+ 	- String 클래스
+ 		- contain	: 문자열 포함여부
+ 		- split		: 구분자를 기준으로 문자열을 분할 (배열형으로 저장)
+ 		- join		: 구분자를 기준으로 문자열을 합친다
+ 		- trim		: 앞뒤 공백 제거
+ 		- indexof	: 문자열의 인덱스 번호 확인
+ 		- substring	: 문자열 자르기
+ 		- equals	: 문자열의 내용이 같은지 확인
+ 		- String 클래스는 기본적으로 equals를 오버라이딩하고 있다.
+ 		- char[] 대신 문자열을 쉽게 다룰수 있는 클래스
+ 		- StringBuffer 클래스	: 문자열의 수정이 잦을때 활용되는 클래스
+ 		
+ 	- System 클래스
+  		- 모든 필드와 메서드는 정적필드와 정적메소드로 구성
+  			- exit()				: 프로그램 종료
+  			- currentTimeMillis()	: 컴퓨터의 시계로부터 현재 시간을 읽어서 밀리세컨드 단위로 리턴
+  			- nanoTime()			: 나노세컨드 단위의 long 값 리턴
+ 		
+ 	- Wrapper 클래스
+ 		- 기본형 타입들을 클래스화 한것
+ 			- boolean	: Boolean
+ 			- char		: Character
+ 			- byte		: Byte
+ 			- short		: Short
+ 			- int		: Integer
+ 			- long		: Long
+ 			- float		: Float
+ 			- double	: Double
+ 		- 만든 이유	: 클래스화 하여 다양한 메서드를 제공하기 위함
+ 		- 제너릭 같이 클래스 타입을 요구할때 사용해야 한다
  	
