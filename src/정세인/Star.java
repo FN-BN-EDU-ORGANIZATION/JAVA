@@ -1,6 +1,7 @@
 package 정세인;
 import java.util.Scanner;
 public class Star {
+	
 	public static void main(String[] args) {
         Scanner star = new Scanner(System.in);
         System.out.print("별 높이: ");

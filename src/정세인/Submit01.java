@@ -1,6 +1,5 @@
 package 정세인;
 
-
 class Shopper{
    private int Holding;
    private int TakoCnt;
