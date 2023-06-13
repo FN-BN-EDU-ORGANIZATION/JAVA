@@ -110,7 +110,7 @@ class Shapes extends ConsoleMenu{ //도형 생성기를 모아둔 클레스 (자
 	
 }
 
-class ScannerSearcher extends Shapes{ 	
+class ScannerSearcher extends Shapes{ //입력판독기 클레스(자식 C)
 	boolean outStringSearcher;	//정수,문자 구분 탈출용 변수
 	boolean outintSearcher;		//홀수,짝수 구분 탈출용 변수
 	int intSH;	//정수로 판명된걸 저장하는 변수
@@ -167,7 +167,7 @@ interface makeShape {//각 도형생성기를 가동시킬 인터페이스
 	}
 
 
-class makeShapeRectangleV1 extends ScannerSearcher implements makeShape {
+class makeShapeRectangleV1 extends ScannerSearcher implements makeShape { //동작 클레스 (자식 D)
 
 	@Override
 	public void makeShape() {
@@ -227,7 +227,7 @@ class makeShapeRhombus extends ScannerSearcher implements makeShape {
 	}
 	
 }
-class MainRun extends Shapes {
+class MainRun extends Shapes {	//메뉴 동작 클레스 (자식 C)
 	//인터페이스 연결
 	//-------------------------------------------------------
 	makeShape ShapeRectangleV1 = new makeShapeRectangleV1();
