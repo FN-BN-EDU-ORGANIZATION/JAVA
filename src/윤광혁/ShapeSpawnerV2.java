@@ -115,22 +115,14 @@ class ScannerSearcher extends Shapes{ //입력판독기 클레스(자식 C)
 	boolean outintSearcher;		//홀수,짝수 구분 탈출용 변수
 	int intSH;	//정수로 판명된걸 저장하는 변수
 	int OKSH;	//홀수로 판명된걸 저장하는 변수
-	public boolean isint(String str) { //문자인지 정수인지 확인하는 메서드
-		//Integer.parseInt 는 문자를 정수로 변환한다.
-		try { //if를 쓰면 컴파일러가 거부해서 트라이로 강제실행
-			Integer.parseInt(str);	
-			return true;
-			//변환했지만 숫자가 아닌 문자라 뜨는 오류를 받으면 false로
-		} catch (NumberFormatException ex) { 
-			return false;
-		}
-	}
+	
 	public int  scannerSearcher(){		//문자인지 정수인지 홀수인지 짝수인지 확인후 최종값 반환 메서드
 		this.intSH=0;	//변수 초기화
 		this.OKSH=0;
-		this.outStringSearcher = true;
+		
 		System.out.println("높이를 입력");	
 		System.out.print("(주의! 홀수만!) : ");
+		this.outStringSearcher = true;
 		while(outStringSearcher == true) { //문자 인지 정수인지 확인 루프 시작
 		this.SH = sc.next();
 		
@@ -142,6 +134,18 @@ class ScannerSearcher extends Shapes{ //입력판독기 클레스(자식 C)
 		
 	}return OKSH;
 	}
+	
+	public boolean isint(String str) { //문자인지 정수인지 확인하는 메서드
+		//Integer.parseInt 는 문자를 정수로 변환한다.
+		try { //if를 쓰면 컴파일러가 거부해서 트라이로 강제실행
+			Integer.parseInt(str);	
+			return true;
+			//변환했지만 숫자가 아닌 문자라 뜨는 오류를 받으면 false로
+		} catch (NumberFormatException ex) { 
+			return false;
+		}
+	}
+	
 	public int searcherheight(int sh) { //홀수인지 짝수인지 확인하는 메서드
 		this.outintSearcher = true;
 		while(outintSearcher == true) { //홀수인지 짝수인지 확인하는 루프 시작 
@@ -227,6 +231,7 @@ class makeShapeRhombus extends ScannerSearcher implements makeShape {
 	}
 	
 }
+
 class MainRun extends Shapes {	//메뉴 동작 클레스 (자식 C)
 	//인터페이스 연결
 	//-------------------------------------------------------
