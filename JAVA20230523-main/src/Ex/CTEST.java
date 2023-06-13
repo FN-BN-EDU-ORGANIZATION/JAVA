@@ -1,0 +1,149 @@
+package Ex;
+
+
+class Seller{
+	private int MyMoney;
+	private int AppleCnt;
+	public int Price;
+
+
+	public Seller(int myMoney, int appleCnt, int price) {
+
+		super();
+
+		MyMoney = myMoney;
+
+		AppleCnt = appleCnt;
+
+		Price = price;
+
+	}
+
+	public int Receive(int money) {
+
+		// 1 money를 MyMoney 에 누적
+
+		MyMoney += money;
+
+		// 2 money 에 해당되는 만큼 사과개수를 계산
+
+		int revcnt = money/Price+1;
+
+		// 3 AppleCnt에서 계산된 만큼의 사과계수를 차감
+
+		AppleCnt -= revcnt;
+
+		// 4 계산된 사과개수를 리턴 
+
+		return revcnt;
+
+	}
+
+	public void ShowInfo() {
+
+		// 속성 정보를 Console에 출력
+
+		System.out.println("----판매자정보----");
+
+		System.out.println("보유금액 : "+ MyMoney);
+
+		System.out.println("사과 개수 : " + AppleCnt);
+
+		System.out.println("개당가격 : " + Price);
+
+		
+
+	}
+
+}
+
+
+
+class Buyer{
+
+	private int MyMoney;
+
+	private int AppleCnt;
+
+	
+
+	
+
+	public Buyer(int myMoney, int appleCnt) {
+
+		super();
+
+		MyMoney = myMoney;
+
+		AppleCnt = appleCnt;
+
+	}
+
+	public void Payment(Seller seller, int money) {
+
+		// 1 Seller에게 money 전달
+
+		MyMoney = money;
+
+		// 2 Seller에게 Money 전달		// 3 Seller로부터 사과계수받기
+
+		int cnt = seller.Receive(money);
+
+		// 4 사과개수를 멤버인 AppleaCnt 누적
+
+		AppleCnt += cnt;
+
+	}
+
+	public void ShowInfo() {
+
+		// 속성 정보를 Console에 출력
+
+		System.out.println("----구매자정보----");
+
+		System.out.println("보유금액 : "+ MyMoney);
+
+		System.out.println("사과 개수 : " + AppleCnt);
+
+	}
+
+}
+
+
+
+
+
+
+
+public class CTEST {
+
+
+
+	public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+
+
+
+		Seller 사과장수1 = new Seller(100000,100,1000);		// 보유금액, 사과개수, 개당가격
+
+		Buyer 홍길동 = new Buyer(10000,0);			// 보유금액, 사과개수	
+
+		Buyer 엄태웅 = new Buyer(20000,0);
+
+		Buyer 김성중 = new Buyer(30000,0);
+
+		홍길동.Payment(사과장수1,2000);
+
+		사과장수1.ShowInfo();
+
+		홍길동.ShowInfo();
+
+		
+
+	}
+
+
+
+}
+
