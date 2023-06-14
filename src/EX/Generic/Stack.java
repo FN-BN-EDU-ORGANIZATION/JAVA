@@ -1,3 +1,4 @@
+package EX.Generic;
 // 문제: 제너릭을 사용하여 스택(Stack) 클래스를 구현하세요.
 // 제한사항:
 // - Stack 클래스는 제너릭 타입 T를 가지며, push, pop, isEmpty 메서드를 구현해야 합니다.
@@ -35,6 +36,7 @@ public class Stack<T> {
         stack.push(1);
         stack.push(2);
         stack.push(3);
+        stack.push(4);
 
         while (!stack.isEmpty()) {
             System.out.println(stack.pop());
