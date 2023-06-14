@@ -141,11 +141,11 @@ class ScannerSearcher extends Shapes { // 입력판독기 클레스(자식 C)
 
 	public boolean isint(String str) { 			// 문자인지 정수인지 확인하는 메서드
 												// Integer.parseInt 는 문자를 정수로 변환한다.
-		try { 									// if를 쓰면 컴파일러가 거부해서 트라이로 강제실행
-			Integer.parseInt(str);
+		try { 									// 하지만 변환하려는 값이 정수문자가 아니라 문자이면 
+			Integer.parseInt(str);				// NumberFormatException 오류가 발생한다.
 			return true;
-		} catch (NumberFormatException ex) {	// 변환했지만 숫자가 아닌 문자라 뜨는 오류를 받으면 false로
-			return false;
+		} catch (NumberFormatException ex) {	// 만약 NumberFormatException 오류가 발생하면 예외처리하고
+			return false;						// false를 반환한다.
 		}
 	}
 
