@@ -1,0 +1,76 @@
+  1. 기본 클래스
+  	- Java.lang 패키지	: 기본으로 import 시켜준다
+  	- object 클래스		
+  		- equals			: 객체의 주소가 서로 같은지 비교하는 함수
+  		- HashCode			: 객체를 식별하는 하나의 정수값
+  		- identityHashCode	: 실제 객체위치 을 확인하는 함수
+  		- clone				: 객체를 복제하는데 사용되는 메서드
+  
+ 	- String 클래스
+ 		- contain	: 문자열 포함여부
+ 		- split		: 구분자를 기준으로 문자열을 분할 (배열형으로 저장)
+ 		- join		: 구분자를 기준으로 문자열을 합친다
+ 		- trim		: 앞뒤 공백 제거
+ 		- indexof	: 문자열의 인덱스 번호 확인
+ 		- substring	: 문자열 자르기
+ 		- equals	: 문자열의 내용이 같은지 확인
+ 		- String 클래스는 기본적으로 equals를 오버라이딩하고 있다.
+ 		- char[] 대신 문자열을 쉽게 다룰수 있는 클래스
+ 		- StringBuffer 클래스	: 문자열의 수정이 잦을때 활용되는 클래스
+ 		
+ 	- System 클래스
+  		- 모든 필드와 메서드는 정적필드와 정적메소드로 구성
+  			- exit()				: 프로그램 종료
+  			- currentTimeMillis()	: 컴퓨터의 시계로부터 현재 시간을 읽어서 밀리세컨드 단위로 리턴
+  			- nanoTime()			: 나노세컨드 단위의 long 값 리턴
+ 		
+ 	- Wrapper 클래스
+ 		- 기본형 타입들을 클래스화 한것
+ 			- boolean	: Boolean
+ 			- char		: Character
+ 			- byte		: Byte
+ 			- short		: Short
+ 			- int		: Integer
+ 			- long		: Long
+ 			- float		: Float
+ 			- double	: Double
+ 		- 만든 이유	: 클래스화 하여 다양한 메서드를 제공하기 위함
+ 		- 제너릭 같이 클래스 타입을 요구할때 사용해야 한다
+ 		
+ 	 	- Date 클래스
+ 		- Calendar 클래스가 나오기 전까지 사용된 클래스
+ 		- 메서드
+ 			- getYear	: 년도를 출력
+ 			- getMonth	: 0 ~ 11까지 출력하므로 뒤에 +1을 더한다
+ 			- getDay	: 0 ~ 6 으로 출력되며 일 ~ 토 순서이다
+ 			- getDate	: 날짜를 출력
+ 			- getHours	: 시간을 출력
+ 			- getMinutes: 분을 출력
+ 			- getSeconds: 초를 출력
+ 		
+ 	- Calendar 클래스
+ 		- 날짜와 시간을 다루는 클래스
+ 		- Calendar 은 객체사 생성 불가하다
+ 		- 메서드
+ 			- getInstance	: 기본은 현재 시스템의 시간
+ 			- YEAR			: 년도를 출력
+ 			- MONTH	+1		: 0~11 까지 출력하므로 뒤에 + 1을 더한다
+ 			- DATE			: 날짜를 출력
+ 			- HOUR			: 시간
+ 			- MINUTE		: 분
+ 			- SECOND		: 초
+ 			- MILLISECOND	: 1000분의 1초
+ 			- DAY_OF_WEEK	: 1~7 로 출력되며 일 ~ 토 순서이다
+ 	
+ 	- Formatter 클래스
+ 		- SimpleDateFormat	: 날짜 형식을 변경해준다
+ 			- 객체를 생성후 사용할수있다.
+ 			- Calendar 객체를 생성후 Date 클래스로 형 변환을 하여 사용할수도 있다.
+ 				- 바로 SimpleDateFormat 을 생성 하면서 뒤에 ("원하는 형식").format(Date클래스로 형변환한 Cal 객체명)
+ 				  으로 바로 System.out.println을 사용할수 있다.
+ 				  - 예 : Calendar cal = Calendar.getInstance();
+ 				  		 Date date = cal.getTime();
+ 				  		 System.out.println(new SimpleDateFormat("yyyy-MM-dd").format(date);
+ 			- format 할때 월 분은 mm 으로 표시되어 월은 대문자 분은 소문자로 표시한다.	 
+ 			
+ 			 
