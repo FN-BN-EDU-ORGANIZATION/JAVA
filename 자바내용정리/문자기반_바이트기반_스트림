@@ -40,6 +40,7 @@
  			- SequenceInputStream	: 두개의 스트림을 하나로 연결
  			- ObjectInputStream		: 객체 단위로 I/O
  			- PushbackInputStream 	: 버퍼를 이용해 읽은 데이터를 다시 되돌린다	
+ 			- InputStreamReader		: 바이트 기반 입력 스트림에 연결되어 문자 입력 스트림인 Reader로 변환
  				
   		- 출력	
   			- FilterOutputStream	: 필터를 이용하 출력
@@ -47,6 +48,7 @@
   			- DataOutputStream		: 기본타입으로 데이터를 처리(int, double)
   			- ObjectOutputStream	: 객체 단위로 I/O
   			- PrintStream			: Print 관련기능(버퍼를 사용함) / print, println
+  			- OutputStreamWriter	: 바이트 기반 출력스트림에 연결되어 문자출력 스트림인 Writer로 변환
   	
   	- 문자기반 스트림 복사
   		- 원본 데이터를 불러와 while 문으로 무한 루프를 돌리고 안에서 if 문을 사용하여 -1 이 나오면 break 하고 불러온 데이터를 지정한 파일명으로 저장					  
