@@ -1,0 +1,10 @@
+  1. JDBC 연동 방법
+  	- MySQL Communitiy Downloads 접속
+  	- Connector/J 클릭
+  	- select Operationg System 에서 Platform Independent 선택 후 다운
+  	- 다운 받은 파일 압축 풀기
+  	- Eclipse 내에서 프로젝트 우 클릭 properties 선택
+  	- java build path 클릭
+  	- class path 클릭우 오른쪽 add external Jar
+  	- 압축 푼 파일 안에 있는 jar 파일 선택
+  	- apply 누르고 apply and close 선택

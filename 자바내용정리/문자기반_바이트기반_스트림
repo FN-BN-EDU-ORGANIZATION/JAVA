@@ -48,6 +48,9 @@
   			- DataOutputStream		: 기본타입으로 데이터를 처리(int, double)
   			- ObjectOutputStream	: 객체 단위로 I/O
   			- PrintStream			: Print 관련기능(버퍼를 사용함) / print, println
+  				- PrintStream		: 바이트 기반 출력 스트림
+  				- PrintWriter		: 문자 기반 출력 스트림
+  			
   			- OutputStreamWriter	: 바이트 기반 출력스트림에 연결되어 문자출력 스트림인 Writer로 변환
   	
   	- 문자기반 스트림 복사

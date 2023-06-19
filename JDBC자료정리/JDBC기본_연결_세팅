@@ -1,0 +1,87 @@
+  1. 프로그래밍 단계
+  	- JDBC 드라이버 로드
+  		- Class.forName()			: 경로는 JDBC 드라이버 다운후 압축푼 폴도 내에 있는 jar 파일
+  									   내용 확인 -> 타고타고 Driver.class 까지
+  				
+  	- 데이터베이스 연결
+  		- java.sql.Connection		: MySql 아이디, 비밀번호, 주소를 넘겨줘서 유효한지 확인
+  		
+  	- Statement 생성
+  		- java.sql.Statement		: SQL문 전송용 참조변수
+  		- java.sql.PreparedStatement: SQL문 전송용 참조변수
+  		
+  	- Sql문 전송
+  		- java.sql.Statement
+  			- executeQuery()	: 저장된 데이터를 result 으로 넘겨주는 역할 (출력할때 if문 안에 while 문을 사용한다)
+  				- Select	: Select * from 테이블명
+  				
+  			- executeUpdate()	: Insert, Update, Delete 시 사용(DML문 이고 if문을 사용한다)
+  				- Insert	: insert into 테이블명 values()
+  				- Update	: update 테이블명 set = 변경내용 where PK명 = 바꿀 위치
+  				- Delete	: delete from 테이블명 where PK명 = 지울 위치
+  			
+  	- 결과 받기
+  		- java.sql.ResultSet	: 넘겨받은 정보를 출력
+  		
+  	- 연결 해제
+  		- java.sql.Connection	: 데이터베이스 연결 해제
+  			- close()			: 역순으로 각 try/catch 로 close 해줘야한다. Statement 생성 -> Connection 순
+  			
+  	예시 :
+  	연결정보 저장용 변수
+	
+	String id = mysql 아이디
+	String pw = mysql 비밀번호
+	String url = mysql 주소 -> jdbc:mysql://호스명:포트/데이터베이스
+	
+	JDBC 참조변수
+	
+	Connection con = null			: DB 연결용 참조변수
+	PreparedStatement pstmt = null	: SQL문 전송용 참조변수
+	ResultSet rs = null				: SQL 쿼리문 결과(Select 결과) 수신용 참조변수
+	
+	try
+		{
+			Class.forName("com.mysql.cj.jdbc.Driver");		// 드라이버 적제
+			System.out.println("Driver Loading Success");
+			conn = DriverManager.getConnection(url,id,pw);
+			System.out.println("DB Connected");
+			pstmt = conn.prepareStatement("insert into tbl_students values(?,?,?)");
+			pstmt.setString(1,"아무무");
+			pstmt.setString(2,"이집트");
+			pstmt.setString(3,"010-222-3333");
+			int result = pstmt.executeUpdate();
+			if(result > 0 )
+			{
+				System.out.println("Insert Success");
+			}
+			else
+			{
+				System.out.println("Insert Failed");
+			}
+				
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+		finally							
+		{
+			try 
+			{
+				pstmt.close();
+			}
+			catch(Exception ex)
+			{
+				ex.printStackTrace();
+			}
+			try
+			{
+				conn.close();
+			}
+			catch(Exception ex)
+			{
+				ex.printStackTrace();
+			}
+			
+		}
