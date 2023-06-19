@@ -7,8 +7,11 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
-import org.json.*;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 public class ChatGpt {
 
@@ -16,7 +19,9 @@ public class ChatGpt {
 	HttpURLConnection con = null;
 	private JSONObject sendMsg = new JSONObject();
 	private JSONArray chatHistory = new JSONArray();
-    
+
+	//끝말잇기의 단어 저장용(공유)
+	public static List<String> endword = new ArrayList();	
 
 	public ChatGpt(String key) {
 		this.key = key;

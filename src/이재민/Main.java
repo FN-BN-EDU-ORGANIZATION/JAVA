@@ -23,6 +23,7 @@ public class Main {
 				gpt.send(message);
 
 				String response = gpt.receive();
+				ChatGpt.endword.add(response);
 				// 대화종료조건확인
 
 				// 응답을 출력한다.
