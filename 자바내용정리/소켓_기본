@@ -1,0 +1,58 @@
+  1. Socket
+  		- 프로그래밍적 정의	: 소프트웨어로 구현시킨 추상적인 포트이며 원격지에 있는 프로그램 간 연결에 사용
+  		- 사전적 정의		: 전선/리드선,플러그 등을 접속하기 위한 홀/구멍
+  	
+  	- 프로그래밍 단계
+  		- Server
+  			- 요청대기(ServerSocket)		: client 에서 접속 요청전
+  			- 요청허용(accept())			: client 에서 접속 요청후
+  			- 메시지 송수신(Input/Output)	: client랑 연결된후
+  			- 소켓종료(socket.close())		: 소켓종료
+  			
+  		- Client
+  			- 접속요청(Socket)				: Server가 시작된후
+  			- 메시지 송수신					: Server에서 요청을 허용한후
+  			- 소켓종료(socket.close())		: 소켓종료
+  			
+  	- socket 관련 클래스 / 함수
+  		- Socket		: 클라이언트가 서버에 연결요청에 사용
+  		- SocketServer	: 클라이언트의 연결요청을 받아 세션을 형성
+  		- InputStream	: 데이터를 받기 위해서 사용되는 함수
+  		- OutputStream	: 데이터를 보내기 위해서 사용되는 함수
+  		
+  	- 서버의 기본코드 예시
+  									// 접속할수있는 포트 지정
+  		- 	ServerSocket server = new ServerSocket(5000);									
+			System.out.println("[INFO] Server Socket Listening..");
+			
+			while(true)
+			{
+				// 클라이언트를 허용해주는 단계
+				Socket client = server.accept();											
+				System.out.println("[INFO] " + client.getInetAddress()+" 접속되었습니다.! ");
+			
+				OutputStream out = client.getOutputStream();
+				DataOutputStream dout = new DataOutputStream(out);
+				
+				// 클라이언트의 접속을 확인하는 코드
+				dout.writeUTF(client.getInetAddress()+" 님 접속 확인 되었습니다. by Server");		
+				dout.flush();
+				dout.close();
+			}			
+			
+	- 클라이언트의 기본코드 예시
+		-	// 안에 값은 IP주소, 클라이언트에서 설정한 포트번호
+			Socket client = new Socket("192.168.2.254",6000);	 
+			
+			System.out.println("Server와 연결완료");
+			
+			// 서버에서 보낸 메시지를 읽어오는 기본 코드
+			InputStream in = client.getInputStream();
+			DataInputStream din = new DataInputStream(in);
+			String message = din.readUTF();						
+			System.out.println(message);
+		
+			din.close();
+			client.close();
+			
+			
