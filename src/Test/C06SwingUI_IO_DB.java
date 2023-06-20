@@ -397,10 +397,27 @@ class GUI extends JFrame implements ActionListener,KeyListener{
 							{
 								e1.printStackTrace();
 							}
-						}
-						
-						
+							model.setRowCount(0); // 기존 데이터 초기화
+
+					        // tbl_memo로부터 데이터 가져오기
+					        try {
+					            pstmt = conn.prepareStatement("select * from tbl_memo");
+					            rs = pstmt.executeQuery();
+
+					            if (rs != null) {
+					                while (rs.next()) {
+					                    Object[] rowData = { rs.getInt("no"), rs.getString("contents"), rs.getString("regdate") };
+					                    model.addRow(rowData);
+					                }
+					            }
+					        } catch (SQLException e1) {
+					            e1.printStackTrace();
+					        } finally {
+					            // ...
+					        }
+					    }
 					}});
+
 				btn5.addActionListener(new ActionListener() {
 
 					
@@ -444,10 +461,26 @@ class GUI extends JFrame implements ActionListener,KeyListener{
 							{
 								e1.printStackTrace();
 							}
-						}
-						
-						
-					}}); //DB
+							model.setRowCount(0); // 기존 데이터 초기화
+
+					        // tbl_memo로부터 데이터 가져오기
+					        try {
+					            pstmt = conn.prepareStatement("select * from tbl_memo");
+					            rs = pstmt.executeQuery();
+
+					            if (rs != null) {
+					                while (rs.next()) {
+					                    Object[] rowData = { rs.getInt("no"), rs.getString("contents"), rs.getString("regdate") };
+					                    model.addRow(rowData);
+					                }
+					            }
+					        } catch (SQLException e1) {
+					            e1.printStackTrace();
+					        } finally {
+					            // ...
+					        }
+					    }
+					}});
 				
 				// Component를 panel에 추가
 				panel.add(btn4);
