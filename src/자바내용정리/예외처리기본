@@ -1,0 +1,38 @@
+   1. 예외처리
+ 	- 오류의 종류	
+ 		- 컴파일 오류	: 문법 오류(Syntax Error) / 오타, 문법, 자료형 체크 등등 실행 하지 않아도 알수 있는 오류
+ 		- 런타임 오류	: 실행 오류 / 행, 강제종류, NullPointException 등 
+ 			- 에러	: 메모리 부족, 스택오버플로우 등등 복구가 힘든 심각한 오류 (구조상 오류)
+ 			- 예외	: 예외처리 코드를 미리 작성해둠으로써 프로그햄 실행이 유지될수 있는 오류(경미한 오류, 예측가능)
+ 		- 버그		: 예기치 못한 오류
+ 		
+ 	- 오류의 관계도
+ 		- Object
+ 			- Throwable
+ 				- Error
+ 				- Exception(예외의 최상위 클래스, Checked 예외 -> 반드시 예외처리 해야한다)
+ 					- RuntimeException(런타임 오류, Unchecked 예외 -> 컴파일은 통과된다)
+ 						- ClassNotFoundException	: 외부에서 클래스 파을 참조시 이름이 잘못 입력
+ 						- FileNotFoundException		: 외부파일을 찾지 못함
+ 						- DataFormatException		: 사용자가 잘못된 데이터를 입력
+ 						
+ 					- IOException(Checked 예외 -> 반드시 예외처리 해야한다)
+ 	- 예외처리
+ 		- try catch 	: 예외 발생시 별도의 처리를 하지 않으면 프로그램이 비정상 종료된다
+ 		- 예외 원인 확인	: 변수명.getCause()
+ 		- 예외객체 메세지확인	: 변수명.toString()
+ 		- 예외객체 식별정보	: 변수명.getStackTrace()
+ 		- 예외메세지 출력	: 변수명.printStackTrace()
+ 	
+ 	- 예외 넘기기
+ 		- throws	: 메서드 내부에서 해당 예외 발생시 메서드를 호출한쪽으로 예외를 넘긴다.
+ 					  Unchecked 예외를 넘긴다면 호출하는 쪽에서 반드시 예외처리를 해줘야 된다
+ 					  
+ 	- finally	: 예외와 상관없이 반드시 실행되어야 하는 코드는 try catch문 다음에 finally 로 감싸준다
+ 				  파일 입출력중 close 메서드 사용시 에외가 발생할수도 있기에 finally 안에서 다시 예외처리를 해줘야한다
+ 	
+ 	- try with resource문 : 입출력 을 사용할때 close를 자동으로 호출해준다.
+ 	
+ 	- 사용자 정의 예외
+ 		- 일반적으로 RuntimeException을 상속받아 만들어 예외처리를 선택적으로 사용할수 있게 만든다.
+ 		
