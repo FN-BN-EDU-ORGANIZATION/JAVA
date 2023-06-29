@@ -1,3 +1,4 @@
+package EX.Generic;
 // 문제: 제너릭을 사용하여 Pair<T, U> 클래스를 구현하세요.
 // Pair 클래스는 두 개의 요소를 담을 수 있는 클래스입니다.
 // 제한사항:
@@ -5,12 +6,12 @@
 // - getFirst 메서드는 첫 번째 요소를 반환합니다.
 // - getSecond 메서드는 두 번째 요소를 반환합니다.
 
-public class Pair<T, U> {
+public class Ex3<T, U> {
 
     private T first;
     private U second;
 
-    public Pair(T first, U second) {
+    public Ex3(T first, U second) {
         this.first = first;
         this.second = second;
     }
@@ -24,8 +25,8 @@ public class Pair<T, U> {
     }
 
     public static void main(String[] args) {
-        Pair<String, Integer> pair1 = new Pair<>("Alice", 25);
-        Pair<Boolean, Double> pair2 = new Pair<>(true, 3.14);
+        Ex3<String, Integer> pair1 = new Ex3<>("Alice", 25);
+        Ex3<Boolean, Double> pair2 = new Ex3<>(true, 3.14);
 
         System.out.println("Pair 1:");
         System.out.println(pair1.getFirst());
