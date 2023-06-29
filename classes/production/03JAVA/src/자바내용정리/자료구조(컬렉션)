@@ -1,0 +1,95 @@
+  1. 컬렉션(자료구조)
+  	- List	: 차례대로 모여있는 데이터이면서 중복을 허용한다.
+  			- ArrayList		: Vector를 개선한것이며 내부안에 배열을 사용한다
+  				삭제시		: 중간의 요소를 삭제시 뒤인덱스부터 마지막 인덱스 까지 모두 앞으로 1씩 당겨진다.
+  						  
+  			- LinkedList	: 연속되지 않은 공간에 데이터를 할당하여 앞뒤로 링크 시켜놓는다
+  						  내부 배열 형태가 아닌 인접 참조를 링크해서 체인처럼 관리된다. 
+  				삭제시		: 그러므로 중간 요서를 삭제해도 ArrayList 랑 다르게 일일이 인덱스를 설정해줄 필요가 없다
+  						  
+  			- Stack			: 후입선출임으로 나중에 들어간 값이 먼저 나온다
+  				삭제시		: 뒤에 들어간 요소에서 지속적으로 추가 삭제가 일어난다. 그러므로 ArrayList로 구현하는것이 적합하다
+  						  
+  			- Queue			: 선입선출임으로 먼저 들어간것이 먼저 나온다
+  				삭제시		: 먼저 들어간것이 먼저 삭제된다. ArrayList로 만들면 뒤에 있는 요소들이 전부 이동해야 한다.
+  						  그러므로 LinkedList로 구현하는것이 적합하다. 
+  						  
+  			- Vector		: ArrayList와 다른점은 멀티 스레드환경에서 안전하게 객체를 추가/삭제할 수 있다.
+ 
+ 		- 공통 메서드
+ 			- 객체추가
+ 				- boolean add(E e)				: 주어진 객체를 맨 끝에 추가
+ 				- void add(int idx,E element)	: 주어진 인덱스에 객체를 추가
+ 				- E set(int idx, E element)		: 주어진 인덱스에 저장된 객체를 주어진 객체로 변경
+ 		
+ 			- 객체검색
+ 				- boolean contains(Object o)	: 저장되어 있는 전체 객체 수를 리턴
+ 				- E get(int idx)				: 주어진 인덱스에 저장된 객체를 리턴
+ 				- boolean isEmpty()				: 컬렉션이 비어 있는지 확인
+ 				- int size()					: 저장되어 있는 전체 객체 수를 리턴
+ 		
+ 			- 객체 삭제
+ 				- void clear()					: 저장된 모든 객체를 삭제
+ 				- E remove(int idx)				: 주어진 인덱스에 저장된 객체를 삭제
+ 				- boolean remove(Object o)		: 주어진 객체를 삭제
+ 		
+ 
+ 		
+  	- Set	: 순서가 없는 데이터이면서 중복을 허용 하지 않는다
+  		- HashSet		: 순서 없이 저장하며 동일 객체는 중복 저장하지 않는다
+  						  hashCode 메서드를 호출해서 얻어낸 해시코드를 통해 객체의 동등비교후 중복되지 않는 데이터를 Set한다
+  		
+  		- LinkedHashSet	: 중복을 허용하지 않으면서 순서를 유지 한다. 
+  						  내부적으로 해시 테이블을 사용하여 빠른 검색과 삽입이 가능화다
+  		
+  		- TreeSet		: 중복을 허용하지 않으면서 요소는 자동으로 정렬된 순서로 유지된다
+  						  SortedSet 인터페이스를 구현하여 정렬 관련 메서드를 활용 할수 있다.
+  	
+  	- 공통 메서드
+ 		- 객체추가
+ 			- boolean add(E e)				: 주어진 객체를 저장하고 객체가 성공적으로 저장되면 true 리턴 , 중복이면 false 리턴
+ 			
+ 		- 객체검색
+ 			- boolean contains(Object o)	: 주어진 객체가 저장되어 있는지 조사
+ 			- boolean isEmpty()				: 컬랙션이 비어 있는지 확인
+ 			- Iterator<E> iterlator()		: 저장된 객체를 한번씩 가져오는 반복자를 리턴
+ 			- int size()					: 저장되어 있는 전체 객체수를 리턴
+ 			
+ 		- 객체삭제
+ 			- void clear()					: 저장된 모든 객체를 삭제
+ 			- boolean remove(Object o)		: 주어진 객체를 삭제
+ 					
+ 			
+  	- Map	: 키와 값의 쌍으로 이루어진 데이터이면서 키는 중복을 허용 하지 않는다
+  		- HashMap		: Map 인터페이스를 구현한 대표적인 Map 컬렉션이다
+  						  HashMap의 키로 사용할 객체는 hashCode와 equals 메소드를 재정의해서 동등객체가 될 조건을 정해야한다.
+  		
+  		- HashTable		: HashMap과 동일한 내부구도를 가지고 있으나 HashTable은 동기화된 메소드 구성으로 인해 스레드 환경으로부터 안전하다
+  		
+  		- TreeMap		: 증복을 허용하지 않으면서 요서는 자동으로 정렬된 순서로 유지된다
+  						  이진검색 트리를 사용하여 효율적인 검색, 삽입, 삭제를 할수잇다
+  						  SortedMap 인터페이스를 구현하여 정렬관련 메서드를 활용할수 있다.
+  		
+  		- Properties	: 중복을 허용하지 않으면서 properties 확장자를 가진 설정 파일과의 호환성을 제공하여 설정 정보를 저장하고 관리할수 잇다.
+  						  파일 입출력이 지원되어 설정 파일을 로드하고 저장하기위해 load 와 store 메서드가 사용된다.
+  	
+  	- 공통 메서드
+ 		- 객체추가
+ 			- V put(K key,V value)					: 주어진키로 값을 저장하며 새로운 키일경우 null 리턴하고 동일한 키가 있을 경우 값을 대체하고 이전 값을 리턴
+ 		
+ 		- 객체검색
+ 			- boolean containsKey(Object key)		: 주어진 키가 있는지 여부를 확인
+ 			- boolean containsValue(Object value)	: 주어진 값이 있는지 여부를 확인
+ 			- Set<Map.entry<K,V>> entrySet()		: 키와 값의 쌍으로 구성된 모든 map.entry 객체를 set에 담아서 리턴
+ 			- V get(Object key)						: 주어진 키가 있는 값을 리턴
+ 			- boolean isEmpty()						: 컬렉션이 비어있는지 확인
+ 			- Set<K> keySet()						: 모든 키를 set 객체에 담아서 리턴
+ 			- int size()							: 저장된 키의 총수를 리턴
+ 			- Collection<> values()					: 저장된 모든 값을 Collection에 담아서 리턴
+ 			
+ 		- 객체삭제
+ 			- void clear()							: 모든 Map.Entry(키와 값)을 삭제
+ 			- V remove(Object key)					: 주어진 키와 일치하는 Map.Entry를 삭제하고 값을 리턴
+ 			
+ 			
+ 							  

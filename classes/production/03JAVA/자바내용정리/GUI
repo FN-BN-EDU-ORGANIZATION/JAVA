@@ -1,0 +1,155 @@
+  1. GUI
+  	- 구조
+  		- 새로운 프레임이나 창으로 객체를 생성하여 프로그램을 시작
+  		- 레이아웃 객체를 사용하여 기본 레이아웃을 정의
+  		- 화면 구성에 필요한 컴포넌트(버튼, 스크롤바, 아이콘, 툴바 등)들을 생성하고 레이아웃에 배치
+  		- 사용자와 상호작용(클릭, 키보드 입력, 마우스 이동 등)을 하는 이벤트 랜들러를 등록 
+  		- 발생한 이벤트를 처리하는 코드를 구현
+  		
+  	- Swing 과 AWT 의 비교
+  		- 텍스트 출력
+  			- AWT	: Label 
+  			- Swing	: JLabel
+  			
+  		- 멀티 라인 텍스트 출력
+  			- AWT	: Multiple Labels 
+  			- Swing	: Multiple JLabels 또는 JLabel 과 HTML content
+  			
+  		- 다중 라인 포멧 텍스트 출력
+  			- AWT	: Multiple Labels와 다양한 폰트
+  			- Swing	: JLabel과 HTML content
+  			
+  		- 단일 라인 텍스트 입력
+  			- AWT	: TextField
+  			- Swing	: JTextField
+  			
+  		- 다중 라인 텍스트 입력
+  			- AWT	: TextArea 
+  			- Swing	: JTextArea
+  			
+  		- 이미지 출력
+  			- AWT	: N/A
+  			- Swing	: JLabel
+  			
+  		- 텍스트와 이미지 출력
+  			- AWT	: N/A
+  			- Swing	: JLabel
+  			
+  		- ToolTip 팝업 도움말
+  			- AWT	: N/A 
+  			- Swing	: setToolTip on component, subclass JToolTip
+  			
+  		- 텍스트 입력 스타일
+  			- AWT	: N/A 
+  			- Swing	: JEditorPane
+  			
+  		- 푸시버튼과 텍스트
+  			- AWT	: Button
+  			- Swing	: JButton	
+  			
+  		- 푸시버튼, 텍스트/이미지
+  			- AWT	: N/A
+  			- Swing	: JButton
+  			
+  		- 그리기 영역
+  			- AWT	: Canvas
+  			- Swing	: JPanel
+  			
+  		- On/Off 체크박스
+  			- AWT	: CheckBox
+  			- Swing	: JCheckBox
+  			
+  		- 라디오 선택
+  			- AWT	: CheckBoxGroup
+  			- Swing	: ButtonGroup과 메뉴	
+  			
+  		- 드랍다운 리스트 선택
+  			- AWT	: Choice
+  			- Swing	: JComboBox
+  			
+  		- 텍스트 입력 또는 드롭다운 리스트
+  			- AWT	: N/A
+  			- Swing	: JComboBox
+  			
+  		- 스크롤 영역
+  			- AWT	: ScrollPane
+  			- Swing	: JScrollPane	
+  			
+  		- 최상위 창
+  			- AWT	: Dialog, Frame, Window
+  			- Swing	: JDialog, JFrame, JWindow	
+  			
+  		- 기본창
+  			- AWT	: Window
+  			- Swing	: JWindow	
+  			
+  		- 프레임창
+  			- AWT	: Frame
+  			- Swing	: JFrame
+  			
+  		- 다이얼로그 창
+  			- AWT	: Dialog
+  			- Swing	: JDialog
+  			
+  		- 메뉴
+  			- AWT	: Menu
+  			- Swing	: JMenu
+  			
+  		- 메뉴 항목
+  			- AWT	: MenuItem
+  			- Swing	: JMenuItem	
+  			
+  		- 메뉴 단축
+  			- AWT	: 키 스토로크
+  			- Swing	: AWT와 동일	
+  			
+  		- 팝업 메뉴
+  			- AWT	: PopupMenu
+  			- Swing	: JPopupMenu
+  			
+  		- 메뉴 바
+  			- AWT	: MenuBar
+  			- Swing	: JMenuBar
+  			
+  		- 삽입 기호 출력
+  			- AWT	: N/A
+  			- Swing	: caret
+  			
+  	- 이벤트 클래스 종류
+  		- ActionEvent		: 컴포넌트에 정의된 해우이가 발생했을때 나타나는 이벤트이다. addActionListener 메서드로 등록하여 ActionListener에 이벤트를 넘긴다
+  		- MouseEvent		: 컴포넌트에 마우스 액션이 발생할때 나타나는 이벤트 이다. addMouseListener 메서드로 등록하며 MouseListener, MouseAdapterListener에 이벤트를 전달한다
+  		- MouseWheelEvent	: 컴포넌트 안에서 마우스 휠을 회전했을때 나타나는 이벤트이다. addMouseWheelListener 메서드로 등록하며 MouseWheelListener에 이벤트를 전달한다 
+  		- KeyEvent			: 컴포넌트 안에서 키 입력으로 나타나는 이벤트이다. addKeyListener 메서드로 등록하며 KeyListener에 이벤트를 전달한다
+  		- ComponentEvent	: 컴포넌트의 이동, 크기 변결 등 변화가 있을 때 나타나는 이벤트이며 addComponentListener 메서드로 등록하며 ComponenetListener에 이벤트를 전달한다
+  		- ContainerEvent	: 컴포넌트를 추가하거나 삭제할때 컨테이너에 변확가 발생하면 나타나는 이벤트이고 addContainerListener 메서드로 등록하며 ContainerListener에 이벤트를 전달한다
+  		- ItemEvent			: 항목을 선택하거나 해제할때 나타나는 이벤트이다. addItemListener 메서드로 등록하며 ItemListener에 이벤트를 전달하다
+  		
+  	- 이벤트 클래스
+  		- ActionEvent		: 버튼이 눌러졌거나 텍스트필드의 입력이 완료되었을때 메뉴의 항목이 선택되었을때 리스트의 항목이 더블클릭되었을때 발생
+  		- AdjustmentEvent	: 스크롤바의 버블이 움직일때 발생
+  		- ComponentEvent	: 컴포너트의 위치나 크기가 변경되었을때 또는 컴포넌트가 나타나거나 숨겨질때 발생
+  		- ContainerEvent	: 컴포넌트가 컨테이너에 추가되거나 제거될때 발생
+  		- FocusEvent		: 컴포넌트가 키보드로부터 입력을 받아들이기 위한 포커스를 획득하거나 잃었을때 발생
+  		- ItemEvent			: 체크박스나 콤보박스, 라디오버튼, 리스트의 항목이 선택되었을대 발생
+  		- KeyEvent			: 키보드로부터 입력이 있을때 발생
+  		- MouseEvent		: 사용자가 마우스 버튼을 누르거나 놓을때 마우스가 컴포넌트 위로 들어가거나 나올때 또는 사용자가 마우스를 이동하거나 드래그할때 발생
+  		- TextEvent			: 입력된 텍스트레 변경이 일어날때 발생
+  		- WindowEvent		: 윈도가 열리거나 닫힐때 최소화하거나 최대화할때 윈도 메뉴가 선택될때 발생
+  		
+  	- 컴포넌트가 발생시키는 이벤트 클래스
+  		- JButton			: ActionEvent
+  		- JCheckbox			: ItemEvent
+  		- JCheckboxMenuItem	: ItemEvent
+  		- JComboBox			: ItemEvent
+  		- Component			: ComponentEvent, FocusEvent, KeyEvent, MouseEvent
+  		- Container			: ContainerEvnet
+  		- List				: ActionEvent, ItemEvent
+  		- MenuItem			: ActionEvent
+  		- Scrollbar			: AdjustmentEvent
+  		- ScrollPane		: AdjustmentEvent
+  		- TextComponent		: TextEvent
+  		- TextField			: ActionEvent
+  		- Window			: WindowEvent
+  						  
+  						  
+ 	
