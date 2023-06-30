@@ -1,4 +1,4 @@
-package C20230630;
+package KwonIlkeun;
 
 import java.util.Scanner;
 
