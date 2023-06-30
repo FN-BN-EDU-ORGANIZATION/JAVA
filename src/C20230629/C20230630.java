@@ -1,6 +1,6 @@
 package C20230629;
 
-public class C20230629 {
+public class C20230630 {
 	public static void main(String[] args) {
 
 		//의문점		: 이해안했던 점 적기
