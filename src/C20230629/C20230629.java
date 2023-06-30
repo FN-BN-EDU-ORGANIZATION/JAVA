@@ -119,8 +119,8 @@ public class C20230629 {
 			myObject.displayInfo(); //지역변수: 10
         
 			// 지역 블록 외부에서 호출하는 시도
-			int outsideVar = myObject.localVar; // 컴파일 에러 발생
-			System.out.println("외부에서 호출: " + outsideVar);
+//			int outsideVar = myObject.localVar; // 컴파일 에러 발생
+//			System.out.println("외부에서 호출: " + outsideVar);
     }
     
 }
