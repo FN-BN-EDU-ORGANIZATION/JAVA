@@ -1,4 +1,4 @@
-package C20230629;
+package C202306;
 
 import java.util.Scanner;
 
