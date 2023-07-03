@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e92b1a7-2374-41fc-b040-240fecd2a221" name="변경" comment="init">
-      <change beforePath="$PROJECT_DIR$/src/C20230629/C20230629.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/C20230629/C20230629.java" afterDir="false" />
+    <list default="true" id="3e92b1a7-2374-41fc-b040-240fecd2a221" name="변경" comment="0629">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-20",
-    "last_opened_file_path": "C:/Users/nicol/Desktop/JavaWorkspace",
+    "last_opened_file_path": "C:/Users/nicol/Desktop/PowerJava",
     "project.structure.last.edited": "모듈",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -88,11 +88,19 @@
       <option name="project" value="LOCAL" />
       <updated>1688047941933</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="0629">
+      <created>1688051415710</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688051415710</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="0629" />
+    <option name="LAST_COMMIT_MESSAGE" value="0629" />
   </component>
 </project>
