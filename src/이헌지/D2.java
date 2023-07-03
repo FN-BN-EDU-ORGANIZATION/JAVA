@@ -1,6 +1,6 @@
-package 이헌지;
-
-public class D2 {
+//package 이헌지;
+//
+//public class D2 {
 
 //   	1. 변수의 선언및 초기화 
 //		public static void main(String[] args) {
@@ -28,25 +28,22 @@ public class D2 {
 	// 2. 두 변수의 값 교환하기
 	
 	
-		public static void main(String[] args) {
-			int x = 10, y = 20;       //x=10 y=20 으로 선언 
-			int tmp = 0;              // 출력값: x:10y:20 
-			
-			System.out.println("x:" + x + "y:" +y);
-			
-	      tmp = x;
-			x = y;
-		    y = tmp;
-			
-			System.out.println("x:" + x + "y:" +y);
-			
-		}              
-}
-			                       //출력값:x:20y:10
-
-			
-			
-			//처리순서 
+//		public static void main(String[] args) {
+//			int x = 10, y = 20;       //x=10 y=20 으로 선언 
+//			int tmp = 0;              // 출력값: x:10y:20 
+//			
+//			System.out.println("x:" + x + "y:" +y);
+//			
+//	      tmp = x;    // tmp에 x값을 저장
+//			x = y;    // x변수를 로선언
+//		    y = tmp;  //  y를 x변수값을 저장한 tmp로 변수를 설정 
+//			
+//			System.out.println("x:" + x + "y:" +y);    //출력값:x:20y:10
+//			
+//		}              
+//}			                     
+//					
+//처리순서 
 //			->System.out.println("x: " + x + "y:" + y);
 //			->System.out.println("x: " + 10 + "y:" + 20);
 //			->System.out.println("x:10 "+ "y:" + y);
