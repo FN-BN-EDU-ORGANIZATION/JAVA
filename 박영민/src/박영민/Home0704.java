@@ -54,7 +54,7 @@ public class Home0704 {
 
 		// Bonus 이것도 입력받아 보자.
 
-		System.out.print("100이 넘는 수를 입력하세요 : ");
+		System.out.print("\n100이 넘는 수를 입력하세요 : ");
 
 		int q = sc.nextInt();
 
