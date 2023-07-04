@@ -23,9 +23,9 @@ class B{
 
     Map<String, Objects> pair=new HashMap<String ,Objects>();
 
-    void setPair(C c){
-        pair.put("c",new C("a","A"));
-    }
+//    void setPair(C c){
+//        pair.put("c",new C("a","A"));
+//    }
 
 }
 class C{
