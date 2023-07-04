@@ -4,22 +4,15 @@ import java.util.Scanner;
 
 public class C20230629 {
 	public static void main(String[] args) {
-
-		//의문점		: 이해안했던 점 적기
-		//정리 : 코드에 대한 전반적인 정리/해석
+		System.out.println("*");
+		//기본적인 출력문으로 별을 출력함
 		
-		
-		//예제 1
-		Scanner sc = new Scanner(System.in); //주석
-		
-		
-		//예제 2
-		
-		
-		
-		//예제 3
-		
-		
-		
+		for (int i = 1; i <= 3; i++) {
+		    for (int j = 1; j <= i; j++) {
+		        System.out.print("*");
+		    }
+		    System.out.println();
+		    //for문을 활용한 별로 탑쌓기
+		}
 	}
 }
