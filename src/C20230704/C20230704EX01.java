@@ -11,8 +11,7 @@ class Test{
 		System.out.println(iv);
 	}
 	void b()
-	{
-		
+	{	
 		System.out.println(cv);
 		System.out.println(iv);
 	}
