@@ -33,9 +33,17 @@ public class C20230705 {
 //		-> 주사위를 돌려서 생성된 랜덤숫자의 합이 50 넘을때까지 무한반복
 //		-> 50넘었을경우 횟수, 총합 값 저장
 //		
+//		예제1 for문으로 변형(while -> for)
 //		
-
-		
+//		for(count =0; sum< 50; count++){
+//		int dice = random.nextInt(6) + 1;
+//		sum += dice
+//		}
+//		System.out.println("합이 50이상 횟수 : " +count);
+//		System.out.println("총합" + sum);
+//
+//		
+//		
 //		예제2
 //		 postListModel = new DefaultListModel<>();
 //        postList = new JList<>(postListModel);
