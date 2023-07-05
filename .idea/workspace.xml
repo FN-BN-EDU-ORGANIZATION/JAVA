@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e92b1a7-2374-41fc-b040-240fecd2a221" name="변경" comment="0703">
+    <list default="true" id="3e92b1a7-2374-41fc-b040-240fecd2a221" name="변경" comment="0704">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/C20230703/C20230703.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/C20230703/C20230703.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/03JAVA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/03JAVA/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,21 +49,8 @@
     "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
-  <component name="RunManager" selected="애플리케이션.C20230704 (1)">
+  <component name="RunManager" selected="애플리케이션.C20230705">
     <configuration name="C20230704 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C20230704.C20230704" />
-      <module name="03JAVA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="C20230704.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C20230704 (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="C20230704.C20230704" />
       <module name="03JAVA" />
       <extension name="coverage">
@@ -115,6 +102,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C20230705" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C20230705.C20230705" />
+      <module name="03JAVA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="C20230705.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.C20230705" />
         <item itemvalue="애플리케이션.C20230704 (1)" />
         <item itemvalue="애플리케이션.C20230704 (5)" />
         <item itemvalue="애플리케이션.C20230704" />
         <item itemvalue="애플리케이션.C20230704 (4)" />
-        <item itemvalue="애플리케이션.C20230704 (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -159,12 +159,20 @@
       <option name="project" value="LOCAL" />
       <updated>1688402004084</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="0704">
+      <created>1688488864763</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688488864763</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="0703" />
-    <option name="LAST_COMMIT_MESSAGE" value="0703" />
+    <MESSAGE value="0704" />
+    <option name="LAST_COMMIT_MESSAGE" value="0704" />
   </component>
 </project>
