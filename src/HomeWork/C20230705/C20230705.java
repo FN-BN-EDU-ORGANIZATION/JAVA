@@ -1,4 +1,4 @@
-package C20230705;
+package HomeWork.C20230705;
 
 // 상속을 이용하여 다음 클래스들을 간결한 구조로 재작성하라.
 class SharpPencil{

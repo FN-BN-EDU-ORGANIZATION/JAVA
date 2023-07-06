@@ -1,4 +1,4 @@
-package C20230704;
+package HomeWork.C20230704;
 
 class Point{
 	private int x,y;

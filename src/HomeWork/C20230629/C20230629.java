@@ -1,4 +1,4 @@
-package C20230629;
+package HomeWork.C20230629;
 
 public class C20230629 {
 	
