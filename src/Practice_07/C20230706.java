@@ -13,96 +13,76 @@ public class C20230706 {
 //		
 		//예제 1
 		 
-//		<style>
-//		.skillContainer {
-//		  display: flex;
-//		}
+//		public class RandomNumberProbability {
+//	    public static void main(String[] args) {
+//	        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9}; \
+			// 1부터 9까지 숫자배열
+//	        int numberOfSelections = 5; 
+			// numbersOfSelections = 선택할 숫자의 개수
 //
-//		.skillBox {
-//		  width: 100px;
-//		  height: 100px;
-//		  display: flex;
-//		  align-items: center;
-//		  justify-content: center;
-//		  font-size: 24px;
-//		  font-weight: bold;
-//		}
+//	        List<Integer> selectedNumbers = new ArrayList<>();
 //
-//		#skillQBox {
-//		  background-color: yellow;
-//		}
+//	        Random random = new Random();
+//	        // 1부터 9까지의 숫자 중에서 5개를 선택하여 리스트에 추가
+//	        for (int i = 0; i < numberOfSelections; i++) {
+//	            int index = random.nextInt(numbers.length);
+//	            int selectedNumber = numbers[index];
+//	            selectedNumbers.add(selectedNumber);
+//	        }
+	        // 선택된 숫자 출력
+//	        System.out.println("선택된 숫자: " + selectedNumbers);
+//	        // 선택된 숫자의 확률 계산
+//	        int[] counts = new int[numbers.length];
 //
-//		#skillWBox {
-//		  background-color: green;
-//		}
+//	        for (int number : selectedNumbers) {
+//	            counts[number - 1]++;
+//	        }
 //
-//		#skillEBox {
-//		  background-color: purple;
-//		}
+//	        System.out.println("선택된 숫자의 확률:");
+//	        for (int i = 0; i < numbers.length; i++) {
+//	            int number = numbers[i];
+//	            double probability = (double) counts[i] / numberOfSelections;
+//	            System.out.println(number + ": " + probability);
+//	        }
+//	    }
+		
+
+//		public class Calculator {
+//		    public static void main(String[] args) {
+//		        Scanner scanner = new Scanner(System.in);
+//				
+//		        System.out.print("첫 번째 숫자를 입력하세요: ");
+//		        double num1 = scanner.nextDouble();
 //
-//		#skillRBox {
-//		  background-color: red;
-//		}
-//		</style>
+//		        System.out.print("두 번째 숫자를 입력하세요: ");
+//		        double num2 = scanner.nextDouble();
 //
-//		<div class="skillContainer">
-//		  <div id="skillQBox" class="skillBox"></div>
-//		  <div id="skillWBox" class="skillBox"></div>
-//		  <div id="skillEBox" class="skillBox"></div>
-//		  <div id="skillRBox" class="skillBox"></div>
-//		</div>
-//
-//		    <script>
-//		    const TEEMO = {
-//		        name : "티모",
-//		        line : "JNGGLE",
-//		        passiveskill : "투명",
-//		        skillQ : "독침",
-//		        skillW : "우사인볼트",
-//		        skillE : "도트데미지", 
-//		        skillR : "지옥",
-//		        
-//		        skillEExplanation : function(){
-//		            alert(this.name + "의 독이 100초간 매초(AP0.01)데미지를 줍니다.");
-//		        },
-//		        skillQExplanation : function(){
-//		            alert(this.name + "의 " + this.skillQ + "이 500의 데미지를 입히고 100초동안 실명");
-//		        },
-//		        skillWExplanation : function(){
-//		            alert(this.name + "스피드 = " + this.skillW);
-//		        },
-//		        skillRExplanation : function(){
-//		            alert(this.name + "버섯을 밟으면 " + this.skillR + "행");
+//		        System.out.print("연산자를 입력하세요 (+ 또는 -): ");
+//		        char operator = scanner.next().charAt(0);
+				// 숫자 입력, 연산자 선택
+//		        double result = 0.0;
+//				
+//		        switch (operator) {
+//		            case '+':
+//		                result = num1 + num2;
+//		                break;
+//		            case '-':
+//		                result = num1 - num2;
+//		                break;
+//		            default:
+//		                System.out.println("올바른 연산자를 입력하세요 (+ 또는 -).");
+//		                return;
 //		        }
-//		    }
-//		    document.getElementById("skillQBox").addEventListener("click", TEEMO.skillQExplanation.bind(TEEMO));
-//		    document.getElementById("skillWBox").addEventListener("click", TEEMO.skillWExplanation.bind(TEEMO));
-//		    document.getElementById("skillEBox").addEventListener("click", TEEMO.skillEExplanation.bind(TEEMO));
-//		    document.getElementById("skillRBox").addEventListener("click", TEEMO.skillRExplanation.bind(TEEMO));
-//
-//
-//		    </script>
-//
-//		
-//		
-//		예제2
-//		replyButton = new JButton("답변하기");
-//        replyButton.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                String selectedQuestion = questionList.getSelectedValue();
-//                if (selectedQuestion != null) {
-//                    String answer = JOptionPane.showInputDialog(QnaBoard.this, "질문에 대한 답변을 입력하세요:");
-//                    if (answer != null && !answer.isEmpty()) {
-//                        answerTextArea.setText("질문: " + selectedQuestion + "\n답변: " + answer);
-//                    }
-//                }
-//            }
-//        });
-//			-> List에서 선택된 질문 가져옴
-//			-> JavaSwing기능 버튼 클릭하면 답
-//			-> 선택된 질문이 존재할때 JOptionPane을 통해 답변 입력가능
-//			
-////		
-	}
+//				switch 문을 사용하여 연산자에 적절한 계산 수행
+//		        System.out.println("결과: " + result);
+//				Scanner 사용하여 숫자 연사자를 입력받아 계산
+			}
+		
+
+
+		
+		
+		
+		
+	
 }
