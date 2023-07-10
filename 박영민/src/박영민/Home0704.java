@@ -36,7 +36,7 @@ public class Home0704 {
 		int A = a / carPassengers; // A에 몫을 담고
 
 		int B = a % carPassengers; // B에 나머지를 담고
-		if (B > 0) { // 나머지가 0이상일때 몫을 1개 더올린다.
+		if (B > 0) { // 나머지가 0보다 클때 몫을 1개 더올린다.
 			A++;
 		}
 

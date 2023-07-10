@@ -3,47 +3,54 @@ package 박영민;
 import java.util.Scanner;
 
 public class Home0707 {
-
-	public static void main(String[] args) {
-		예제1();	// X자 별 찍기
-		예제2();	// 숫자를 입력 받아 while을 이용해 각 자리의 합을 구하시오. ex) 12345 -> 1+2+3+4+5=15
-
-	}
-	public static void 예제1() {
-		int max = 10;		//변수 max 10으로 초기화
+	
+	public static void 예제1(){
+		//뭔가 무기...강화어쩌고를 만들고싶은데 생각보다 복잡한거같다. 다음에 보안하기로..
+		int weaponLevel=1;	//무기레벨1
+		int damage=100;	//데미지 100
 		
-		for(int i = 0 ;i<=max; i++)		//변수 i를 0부터 max까지 반복(행)
-		{
-			for(int j = 0 ;j<=max; j++)	//변수 j를 0부터 max까지 반복(열)
-			{
-				if(i==j || max-i==j)	//i와j가 같거나, 역순으로 일치할 경우
-					System.out.print("*");	//별 출력
-				else
-					System.out.print(" ");  // 아니면 공백 출력
-			}
-			System.out.println(); 	//줄 바꿈
-		}	
-		
-		
+		while(weaponLevel<10) {	/*강화확률있어야하고 최대강화수치만들고
+			강화수치가 높을수록 강화성공확률감소. 강화성공시 데미지 증가량 퍼센트 추가 일정강화단계에서 실패시 강화수치 초기화*/
+			weaponLevel++;
+			damage+=20;
+		}
+			System.out.println("무기레벨은 "+weaponLevel+"입니다.");
+			System.out.println("데미지는 "+damage+"입니다.");
+		//탈락.
 	}
 	public static void 예제2() {
-		
 		Scanner sc = new Scanner(System.in);
-		
-		System.out.print("숫자를 입력하세요 : ");
+		System.out.print("월을 입력하세요 :");
 		int a = sc.nextInt();
 		
-
-		int sum = 0;		//sum을 0으로 초기화
-		while(a != 0)		//a가 0이 아닌 동안 반복
-		{
-			sum += a % 10;			//나머지연산을 하여 1의 자리의 숫자를 가져와 더한다
-			
-			System.out.println("현재 합계 : " + sum);
-			
-			a /= 10;				//10으로 나누어 1의 자리를 없앤다
+		switch (a) {		//switch문 : 조건식의 결과는 반드시 정수, 문자열이어야 한다.
+							//case문의 값은 중복될수없다. case문의 값은 상수이어야 한다.
+							//switch에서 Boolean사용불가능, case에서도 Boolean 사용불가능.
+							//case에 여러값이 들어갈수 있다.
+			case 3,4,5:
+				System.out.println("봄입니다.");	//입력받은 수가 3,4,5일때 출력함
+				break;							//입력받은 수가 3,4,5일때 멈춤 아니면 진행
+			case 6,7,8:
+				System.out.println("여름입니다.");	//입력받은 수가 6,7,8일때 출력함
+				break;							//입력받은 수가 6,7,8일때 멈춤 아니면 진행
+			case 9,10,11:
+				System.out.println("가을입니다.");	//입력받은 수가 9,10,11일때 출력함
+				break;							//입력받은 수가 9,10,11일때 멈춤 아니면 진행
+			case 12,1,2:
+				System.out.println("겨울입니다.");	//입력받은 수가 12,1,2일때 출력함
+				break;							//입력받은 수가 12,1,2일때 멈춤 아니면 진행
+			default :							
+				System.out.println("1부터 12사이의 숫자를 입력하세요."); 
+				//모든케이스에 걸리지않을 경우 실행된다. 필수요소는 아니다. this similar else...?
+				break; //그리고 멈춘다. 다시 실행을 해야할거같긴한데...
+			}
 		}
-			
-		System.out.println("각 자리의 합계:" + sum);
+	
+	
+	
+	public static void main(String[] args) {
+		예제1();
+		System.out.println("--------------------");
+		예제2();
 	}
 }
