@@ -2,7 +2,7 @@ package 박영민;
 
 import java.util.Scanner;
 
-public class Home0708 {
+public class Home0710 {
 
 	public static void main(String[] args) {
 		예제1();	// X자 별 찍기
