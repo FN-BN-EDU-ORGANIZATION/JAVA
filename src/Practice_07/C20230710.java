@@ -3,7 +3,7 @@ package Practice_07;
 
 
 
-public class C20230708 {
+public class C20230710 {
 	public static void main(String[] args) {
 
 		//의문점		: X
