@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class C20230711 {
 
 	public static void main(String[] args) {
+		
+		//보면 기억나는 코드들도 막상 직접 할때는 생각이 나지 않는다. 어떻게 적용시켜야하는지에 대한 기본 정립이 덜 되어있는거 같다.
 
 		// 년,월,일을 입력받아 그날이 무슨요일인지 계산하시오.
 
