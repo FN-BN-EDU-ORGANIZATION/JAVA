@@ -82,7 +82,7 @@ public class Home0712 {
 	                         (A)
 	                         / \
 	                    (D)-(B) (C)
-	                        /\ /\
+	                        /\   /\
 			     (E)(F) (G)(H)
 	 		      /\
 	 		    (I)(J)
