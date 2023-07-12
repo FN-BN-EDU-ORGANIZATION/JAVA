@@ -169,10 +169,10 @@ Author   : 남궁성
 Email    : castello@naver.com
 */
 
-public class D7
-{
-	public static void main(String[] args)  /*프로그램의 시작 */
-	{
-	   System.out.println("Hello, world.");  // Hello, world를 출력
-	}  
-}
+//public class D7
+//{
+//	public static void main(String[] args)  /*프로그램의 시작 */
+//	{
+//	   System.out.println("Hello, world.");  // Hello, world를 출력
+//	}  
+//}
