@@ -77,7 +77,7 @@ public class Home0710 {
 			System.out.println("당신은 보입니다.");
 			break;
 		}
-
+		
 		switch (computer) {
 		case 1:
 			System.out.println("컴퓨터는 가위입니다."); // 위와 같다.
