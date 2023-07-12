@@ -1,49 +1,49 @@
 package 박영민;
 
-import java.util.Scanner;
-
 public class Home0711 {
+public static void main(String[] args) {
+		
+		//예제1
+	int[]grade1 = new int[3]; // 길이가 3인 int형 배열의 선언 및 생성
 
-	public static void main(String[] args) {
-		예제1();	// X자 별 찍기
-		예제2();	// 숫자를 입력 받아 while을 이용해 각 자리의 합을 구하시오. ex) 12345 -> 1+2+3+4+5=15
+		int[]grade2 = new int[3]; // 길이가 3인 int형 배열의 선언 및 생성
 
-	}
-	public static void 예제1() {
-		int max = 10;		//변수 max 10으로 초기화
-		
-		for(int i = 0 ;i<=max; i++)		//변수 i를 0부터 max까지 반복(행)
-		{
-			for(int j = 0 ;j<=max; j++)	//변수 j를 0부터 max까지 반복(열)
-			{
-				if(i==j || max-i==j)	//i와j가 같거나, 역순으로 일치할 경우
-					System.out.print("*");	//별 출력
-				else
-					System.out.print(" ");  // 아니면 공백 출력
-			}
-			System.out.println(); 	//줄 바꿈
-		}	
-		
-		
-	}
-	public static void 예제2() {
-		
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.print("숫자를 입력하세요 : ");
-		int a = sc.nextInt();
-		
+		grade1[0]=85; // 인덱스를 이용한 배열의 초기화
+		grade1[1]=65;
+		grade1[2]=90;
 
-		int sum = 0;		//sum을 0으로 초기화
-		while(a != 0)		//a가 0이 아닌 동안 반복
-		{
-			sum += a % 10;			//나머지연산을 하여 1의 자리의 숫자를 가져와 더한다
-			
-			System.out.println("현재 합계 : " + sum);
-			
-			a /= 10;				//10으로 나누어 1의 자리를 없앤다
+		grade2[0] = 85; // 배열의 길이보다 적은 수의 배열 요소만 초기화
+
+		for(int i=0; i<grade1.length;i++) {
+		    System.out.print(grade1[i] + " "); // 인덱스를 이용한 배열로의 접근
 		}
-			
-		System.out.println("각 자리의 합계:" + sum);
+
+		for(int i =0;i<grade2.length;i++) {
+		    System.out.print(grade2[i]+" "); // 인덱스를 이용한 배열로의 접근
+		}
+		
+		// 정리 :  int형 데이터를 3개 저장할 수 있는 배열을 선언과 동시에 생성하는 예제 풀이
+		
+		
+		//예제 2
+		int[] grade =new int[]{85,65,90}; // 길이가 3인 int형 배열을 선언과 동시에 초기화
+
+		int sum = 0; // 'sum'변수 선언 0으로 초기화
+
+		for(int i = 0; i < grade.length; i++) {
+
+		    sum += grade[i];	// 반복문을 사용하여 'grade'배열의 각 요소에 접근
+	    					// 각 요소의 값을 'sum'에 더해줌
+		    					// 반복문을 통해 모든 과목의 점수를 더하고, 'sum'에 모든 점수의 합이 저장
 	}
+
+		System.out.println("모든 과목에서 받은 점수의 합은 " + sum + "입니다.");	
+		// 'sum'에 저장된 값, 즉 모든 점수의 합이 출력
+
+		System.out.println("이 학생의 평균은 " + (sum / grade.length) + "입니다.");	
+		//'sum'을 'grade'배열의 길이로 나눈 값, 즉 평균이 출력
+		
+		//정리 : 배열 요소의 합과 평균을 구하는 예제 풀이
+	}
+
 }
