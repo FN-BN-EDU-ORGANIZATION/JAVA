@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- swiper 스크립트 -->
+    <style>
+        .wrapper .slides .swiper-wrapper .swiper-slide{
+            border:1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="slides">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">0</div>
+                <div class="swiper-slide">0</div>
+                <div class="swiper-slide">7</div>
+            </div>
+        </div>
+    </div>
+    <script>
+    var swiper = new Swiper('.slides', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 1000
+        }
+      });
+    </script>
+</body>
+
+</html>
