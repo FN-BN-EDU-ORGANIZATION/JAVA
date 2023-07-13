@@ -2,6 +2,9 @@ package HOMEWORK;
 
 import java.util.Scanner;
 
+import HOMEWORK2.Circle;
+import HOMEWORK2.Triangle;
+
 	//의문점
 	
 	//정리
