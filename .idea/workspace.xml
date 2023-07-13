@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e92b1a7-2374-41fc-b040-240fecd2a221" name="변경" comment="0710 re-up">
+    <list default="true" id="3e92b1a7-2374-41fc-b040-240fecd2a221" name="변경" comment="0711">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/C20230710/c20230710.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/C20230710/c20230710.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/03JAVA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/03JAVA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/03JAVA/C20230705/C20230705.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/03JAVA/C20230705/C20230705.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/03JAVA/C20230710/C20230710.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/03JAVA/C20230710/C20230710.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,31 +38,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Git.Branch.Popup.ShowAllRemotes": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-20",
-    "last_opened_file_path": "C:/임베디드웹과정임시공유폴더/03JAVA/src",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.general"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/임베디드웹과정임시공유폴더/03JAVA&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\임베디드웹과정임시공유폴더\03JAVA\src" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.C20230710">
-    <configuration name="C20230704 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C20230704.C20230704" />
+  <component name="RunManager" selected="애플리케이션.C20230713 (1)">
+    <configuration name="C20230713 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C20230713.C20230713" />
       <module name="03JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="C20230704.*" />
+          <option name="PATTERN" value="C20230713.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C20230704 (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C20230704.C20230704" />
+    <configuration name="C20230713 (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C20230713.C20230713" />
       <module name="03JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="C20230704.*" />
+          <option name="PATTERN" value="C20230713.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C20230705" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C20230705.C20230705" />
+    <configuration name="C20230713 (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C20230713.C20230713" />
       <module name="03JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="C20230705.*" />
+          <option name="PATTERN" value="C20230713.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C20230706" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C20230706.C20230706" />
+    <configuration name="C20230713 (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C20230713.C20230713" />
       <module name="03JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="C20230706.*" />
+          <option name="PATTERN" value="C20230713.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C20230710" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C20230710.C20230710" />
+    <configuration name="C20230713" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C20230713.C20230713" />
       <module name="03JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="C20230710.*" />
+          <option name="PATTERN" value="C20230713.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.C20230710" />
-        <item itemvalue="애플리케이션.C20230706" />
-        <item itemvalue="애플리케이션.C20230705" />
-        <item itemvalue="애플리케이션.C20230704 (1)" />
-        <item itemvalue="애플리케이션.C20230704 (5)" />
+        <item itemvalue="애플리케이션.C20230713 (1)" />
+        <item itemvalue="애플리케이션.C20230713" />
+        <item itemvalue="애플리케이션.C20230713 (5)" />
+        <item itemvalue="애플리케이션.C20230713 (4)" />
+        <item itemvalue="애플리케이션.C20230713 (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +187,28 @@
       <option name="project" value="LOCAL" />
       <updated>1688660498882</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="0710 re:upload">
+      <created>1689041939330</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689041939330</updated>
+    </task>
+    <task id="LOCAL-00007" summary="0710 re:upload">
+      <created>1689041946097</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689041946097</updated>
+    </task>
+    <task id="LOCAL-00008" summary="0711">
+      <created>1689045169048</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1689045169048</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -195,7 +218,9 @@
     <MESSAGE value="0705" />
     <MESSAGE value="0706" />
     <MESSAGE value="0710 re-up" />
-    <option name="LAST_COMMIT_MESSAGE" value="0710 re-up" />
+    <MESSAGE value="0710 re:upload" />
+    <MESSAGE value="0711" />
+    <option name="LAST_COMMIT_MESSAGE" value="0711" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
